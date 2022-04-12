@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{D04FEC70-875E-457E-96B4-F541C198FD36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E1A957B-A557-4313-90CF-441BD0112DBB} = {9E1A957B-A557-4313-90CF-441BD0112DBB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{9E1A957B-A557-4313-90CF-441BD0112DBB}"
 EndProject
