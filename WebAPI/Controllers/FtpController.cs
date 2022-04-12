@@ -10,19 +10,14 @@ namespace WebAPI.Controllers
     public class FtpController : Controller
     {
         // GET: FtpController
-        public ActionResult Index()
+        public ActionResult ListCustomer()
         {
             return View();
         }
 
-        // GET: FtpController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
 
-        // GET: FtpController/Create
-        public ActionResult Create()
+        // GET: FtpController/Add
+        public ActionResult AddCustomer()
         {
             return View();
         }
@@ -30,11 +25,11 @@ namespace WebAPI.Controllers
         // POST: FtpController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult AddCustomer(IFormCollection collection)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(ListCustomer));
             }
             catch
             {
@@ -42,29 +37,9 @@ namespace WebAPI.Controllers
             }
         }
 
-        // GET: FtpController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: FtpController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
         // GET: FtpController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult DeleteCustomer(int id)
         {
             return View();
         }
@@ -72,7 +47,7 @@ namespace WebAPI.Controllers
         // POST: FtpController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult DeleteCustomer(int id, IFormCollection collection)
         {
             try
             {
